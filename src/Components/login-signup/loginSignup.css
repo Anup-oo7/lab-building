@@ -1,0 +1,177 @@
+.container{
+    display: flex;
+   
+}
+
+.leftBackground{
+    width: 50%;
+    height: 86.2vh;
+    background-color: #605BFF;
+    padding: 50px;
+    clip-path: polygon(0% 0, 100% 0%, 80% 101%, 0 100%);
+}
+.logo{
+    text-align: left;
+}
+.subtract{
+    position: absolute;
+    top: 77px;
+    left: 46px;
+}
+.base{
+    margin: auto;
+    font-family: Montserrat;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+.contacts li{
+    list-style: none;
+   margin-right: 10px;
+   margin-bottom: -40em;
+}
+.contacts ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin{
+    
+    height: 65vh;
+    margin-top: 10em;
+   
+}
+.signinHead{
+    font-family: Montserrat;
+font-size: 36px;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: 0em;
+text-align: left;
+margin-bottom: 0;
+}
+.signinAccount{
+font-family: Lato;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+margin: 0;
+}
+.signinWith{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.signinWith span{
+    font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: center;
+color: #858585;
+;
+}
+.signinWith img{
+   width: 15px;
+   height: 15px;
+}
+.signinWithGoogle{
+    display: flex;
+}
+.signinWithApple{
+    display: flex;
+}
+.signinForm{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+ 
+}
+.signinForm input{
+    width: 356.77px;
+height: 43.91px;
+border-radius: 10px;
+border: none;
+margin-bottom: 20px;
+padding: 5px;
+}
+.signInbutton{
+    width: 356.77px;
+    height: 43.91px;
+    border: none;
+    border-radius: 10px;
+    background-color: #605BFF;
+    color: white;
+    font-weight: 700;
+    margin: 20px 0px;
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+  
+    &:hover {
+      cursor: pointer;
+      background-color: #4d48d1; /* Change the background color on hover */
+    }
+}
+.signin a{
+    text-decoration: none;
+    color:#346BD4 ;
+}
+
+@media (min-width:300px) and (max-width:600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }  
+
+    .leftBackground{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90px;
+        clip-path: polygon(0% 0, 100% 0%, 100% 101%, 0 100%);
+    }
+
+    .logo img{
+        text-align: left; 
+        width: 50px;
+    }
+    .subtract{
+        position: absolute;
+        top: 68px;
+        left: 49px;
+    }
+    .base{
+       margin: -6em;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0em;
+        margin-left: -12em;
+        color: white;
+        line-height: 8em;
+    }
+
+    .signin{
+       margin: 2em;
+        height: 65vh;
+        margin-top: 10em;
+       
+    }
+    .forRegister{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .contacts li{
+   
+     position: relative;
+     bottom: 0;
+    }
+}

@@ -1,0 +1,200 @@
+.container {
+    display: flex;
+    height: 100vh;
+  }
+.sidebar{
+    width: 20%;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+.companylogo{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.companylogo span{
+    font-family: Nunito;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #030229
+    }
+.sidebarList img{
+    width: 24px;
+   
+}
+.sidebarList a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    color: #9A9AA9;
+    margin-top: 50px;
+    &:hover{
+        cursor: pointer;
+        color: #605BFF;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  .right img{
+   margin-right: 20px;
+  }
+
+.uploadArea {
+    flex: 1; 
+  }
+  .InputArea{
+    margin: auto;
+    margin-top: 8em;
+    width: 596px;
+    height: 367px;
+    top: 218px;
+    left: 518px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+  }
+  .fileUpload{
+    width: 564px;
+    height: 258px;
+
+    border-radius: 8px;
+    background-color: linear-gradient(0deg, #EBEBEB, #EBEBEB);
+    border: 5px dotted #EBEBEB;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .uploadBtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 564px;
+    height: 56px;
+    padding: 8px, 16px, 8px, 8px;
+    border-radius: 8px;
+    gap: 8px;
+    background-color: #605BFF;
+    color: #FFFFFF;
+    border: none;
+    margin: 20px;
+    font-weight: 600;
+    &:hover {
+        cursor: pointer;
+        background-color: #4d48d1; /* Change the background color on hover */
+    }
+  }
+  .remove-red{
+    color: red;
+    margin-left: 5px;
+  }
+
+ 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #F5F5F5
+  }
+  tr{
+    background-color: white;
+    border: 10px solid #F5F5F5;
+    text-align: left;
+  }
+  
+  th {
+    padding: 10px;
+    text-align: left;
+  }
+  
+ 
+  td {
+    padding: 10px;
+  }
+  
+ 
+  a {
+    color: #605BFF;
+    text-decoration: none;
+  }
+  
+ 
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 8px 24px -6px rgba(0, 0, 0, 0.16);
+    border: none;
+  }
+  
+  .selected-tag {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: #605BFF;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px 5px 5px 0;
+  }
+  
+ 
+ .removeTag{
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .toggle-icon{
+    display: none;
+  }
+
+  @media (min-width:300px) and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      display: none;
+    }
+  
+    .container.sidebar-visible .sidebar {
+      display: block;
+    }
+  
+    .toggle-icon{
+        display: block;
+        margin-left: -20em;
+      }
+      .companylogo span{
+        font-family: Nunito;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 33px;
+        letter-spacing: 0em;
+        margin-left: -5em;
+    
+        color: #030229
+        }
+    /* Add styles for your menu and close icons as needed */
+  }
