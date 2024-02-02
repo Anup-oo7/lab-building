@@ -188,12 +188,12 @@ const toggleSidebar = () => {
         <span>{sidebarVisible ? '✖' : '☰'}</span>
       </div>
 
-      <div className='companylogo '>
-          <img src={companylogo} alt="" /><span>Base</span>
-        </div>
+      
      <div className={`sidebar ${sidebarVisible ? 'visible' : ''}`}>
        
-        
+     <div className='companylogo '>
+          <img src={companylogo} alt="" /><span>Base</span>
+        </div>
        
         <ul className='sidebarList'>
             <Link><img src={category} alt="" />Dashboard</Link>
